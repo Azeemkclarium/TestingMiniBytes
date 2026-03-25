@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tmb.listners.ListnersClass"/>
+    <listener class-name="com.tmb.listners.MethodInterceptor"/>
+    <listener class-name="com.tmb.listners.AnnotationTransform"/>
+  </listeners>
+  <test thread-count="5" name="Tests(failed)">
+    <classes>
+      <class name="com.tmb.tests.LoginTest_HRM">
+        <methods>
+          <include name="inValidloginTest3" invocation-numbers="0"/>
+          <include name="validloginTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="inValidloginTest1" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.tmb.tests.LoginTest_HRM -->
+    </classes>
+  </test> <!-- Tests(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,13 @@
+package com.tmb.enums;
+
+public enum PropertiesEnums {
+	
+	URL,
+	BROWSER,
+	OVERIDEREPORT,
+	PASSEDSCREENSHOT,
+	FAILEDSCREENSHOT,
+	RETRYFAILEDTEST,
+	PARALLELBROWSEREXECUTION
+
+}

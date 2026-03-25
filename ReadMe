@@ -1,0 +1,10 @@
+Thumb Rule Naming convention:
+1.Packages : Use all lowercase letters - com.company.project.module 
+2.Class/Interface : Use PascalCase - AzeemKaleem
+3.Methods :  Use camelCase - loginToApplication
+4.Variables : Use camelCase - countLetter
+5.Constants (static final) : Use all uppercase - BASE_URL
+
+
+Validations:
+Used Assert J Dependency for Test cases validations

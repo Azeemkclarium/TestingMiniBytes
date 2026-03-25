@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-24T19:44:13 IST" name="Suite" finished-at="2026-03-24T19:44:25 IST" duration-ms="12684">
+    <groups>
+    </groups>
+    <test started-at="2026-03-24T19:44:13 IST" name="Tests" finished-at="2026-03-24T19:44:25 IST" duration-ms="12684">
+      <class name="com.tmb.tests.LoginTest_HRM">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.LoginTest_HRM@160c3ec1]" started-at="2026-03-24T19:44:13 IST" name="setUp" finished-at="2026-03-24T19:44:17 IST" duration-ms="3942" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5b39a3e6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validloginTest(java.util.Map)[pri:1, instance:com.tmb.tests.LoginTest_HRM@160c3ec1]" started-at="2026-03-24T19:44:17 IST" name="validloginTest" description="LOGIN_AUTO_TC_001_To Validate the Login with Valid UserName &amp; Password" data-provider="testdata" finished-at="2026-03-24T19:44:25 IST" duration-ms="8268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{TestMethodName=validloginTest, ExecuteConfirmation=yes, Username=Admin, Priority=1, InvocationCount=1, TC-ID=LOGIN_AUTO_TC_001, TestCaseName=To Validate the Login with Valid UserName & Password, Browser=chrome, Password=YWRtaW4xMjM=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validloginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.LoginTest_HRM@160c3ec1]" started-at="2026-03-24T19:44:25 IST" name="tearDown" finished-at="2026-03-24T19:44:25 IST" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tmb.tests.LoginTest_HRM -->
+    </test> <!-- Tests -->
+  </suite> <!-- Suite -->
+</testng-results>
