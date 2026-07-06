@@ -8,15 +8,13 @@
   </listeners>
   <test thread-count="5" name="Tests(failed)">
     <classes>
-      <class name="com.tmb.tests.LoginTest_HRM">
+      <class name="com.tmb.tests.DomainCreationTest">
         <methods>
-          <include name="inValidloginTest3" invocation-numbers="0"/>
-          <include name="validloginTest" invocation-numbers="0"/>
+          <include name="globalTearDown"/>
           <include name="setUp"/>
-          <include name="inValidloginTest1" invocation-numbers="0"/>
-          <include name="tearDown"/>
+          <include name="CreateDomain" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.tmb.tests.LoginTest_HRM -->
+      </class> <!-- com.tmb.tests.DomainCreationTest -->
     </classes>
   </test> <!-- Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

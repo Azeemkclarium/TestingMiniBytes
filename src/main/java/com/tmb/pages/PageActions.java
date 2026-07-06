@@ -1,10 +1,13 @@
 package com.tmb.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
+import com.tmb.drivers.DriverManager;
 import com.tmb.enums.WaitStrategy;
+import com.tmb.extents.ExtentLogger;
 import com.tmb.factories.ExplicitWaitFactory;
-import com.tmb.reports.ExtentLogger;
 
 public class PageActions {
 
@@ -20,6 +23,7 @@ public class PageActions {
 	}
 
 	protected void sendKeys(By by, String value, WaitStrategy wait, String elementName) {
+		ExplicitWaitFactory.performExplicitWait(by, wait).clear();
 
 		ExplicitWaitFactory.performExplicitWait(by, wait).sendKeys(value);
 
@@ -27,10 +31,13 @@ public class PageActions {
 
 	}
 
-	protected boolean isElementDisplayed(By by, WaitStrategy wait) {
-
+	protected static boolean isElementPresent(By by, WaitStrategy wait) {
 		return ExplicitWaitFactory.performExplicitWait(by, wait).isDisplayed();
-
 	}
 
+	protected static void mouseClick(WebElement element) {
+		Actions actions = new Actions(DriverManager.getDriver());
+
+		actions.moveToElement(element).click().perform();
+	}
 }

@@ -1,5 +1,7 @@
 package com.tmb.drivers;
 
+import java.util.Objects;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -12,7 +14,7 @@ public final class Driver {
 	};
 
 	private static void commonBrowserSetup() {
-		DriverManager.getDriver().get(ReadPropertyFile.getvalue(PropertiesEnums.URL).toString());
+		DriverManager.getDriver().get(ReadPropertyFile.getvalue(PropertiesEnums.DEV_URL).toString());
 
 		DriverManager.getDriver().manage().window().maximize();
 	}
@@ -42,12 +44,19 @@ public final class Driver {
 
 	}
 
-	public static void quiteDriver() {
+	public static void forceQuiteDriver() {
 
 		if (DriverManager.getDriver() != null) {
 			DriverManager.getDriver().quit();
 			DriverManager.unLoad();
 		}
 	}
+	
+	public static void quiteDriver() {
+		if (Objects.nonNull(DriverManager.getDriver())) {
+			DriverManager.getDriver().quit();
+			DriverManager.unLoad();
+		}
+    }
 
 }

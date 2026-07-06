@@ -11,7 +11,10 @@
 
 	<test name="Tests" thread-count="2">
 		<classes>
-			<class name="com.tmb.tests.LoginTest_HRM" />
+			<class name="com.tmb.tests.LoginPageElementVerification" />
+			<class name="com.tmb.tests.LoginTest" />
+			<class name="com.tmb.tests.DomainCreationTest" />
+			<class name="com.tmb.tests.DeleteDomain"></class>
 		</classes>
 	</test>
 

@@ -1,12 +1,19 @@
 package com.tmb.tests;
 
+import java.io.IOException;
 import java.util.Map;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
+import com.tmb.constants.FrameworkConstant;
 import com.tmb.drivers.Driver;
 import com.tmb.enums.PropertiesEnums;
+import com.tmb.extents.ExtendReports;
+import com.tmb.utilities.EmailUtils;
 import com.tmb.utilities.ReadPropertyFile;
 
 public class BaseTest {
@@ -28,9 +35,11 @@ public class BaseTest {
 
 	}
 
-	@AfterMethod
-	protected void tearDown() {
+	@AfterSuite
+	protected void globalTearDown() throws IOException {
 		Driver.quiteDriver();
+
+		ExtendReports.flushReport();
 	}
 
 }

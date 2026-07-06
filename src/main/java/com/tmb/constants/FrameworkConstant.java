@@ -1,5 +1,6 @@
 package com.tmb.constants;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -15,29 +16,31 @@ public final class FrameworkConstant {
 	private FrameworkConstant() {
 	}
 
-	private static final String REPORT_TIMESTAMP = new SimpleDateFormat("MM-dd-yyyy_HHmm").format(new Date());
+	private static final String REPORT_TIMESTAMP = new SimpleDateFormat("MM-dd-yyyy_hhmm").format(new Date());
 
 	private static final String ROOTPATH = System.getProperty("user.dir");
 
 	private static final String CHROMEDRIVERPATH = ROOTPATH + "/src/test/resources/executables/chromedriver.exe";
 
-	private static final String PROPERTYFILEPATH = ROOTPATH + "/src/test/resources/Property/config.properties";
+	private static final String CONFIG_PROPERTYFILEPATH = ROOTPATH + "/src/test/resources/Property/config.properties";
+	private static final String MESSAGE_PROPERTYFILEPATH = ROOTPATH
+			+ "/src/test/resources/Property/messages.properties";
 
 	private static final String EXCELTESTDATAPATH = ROOTPATH + "/src/test/resources/testdata/TestDataSheet.xlsx";
 
-	private static final String EXTENT_REPORT_PATH = ROOTPATH + "/ExtentReport/" + "ExtentReportTestOutput";
-	
-	public  static final String EXTENT_DOC_TITLE = "ExtentReportTestOutput"+REPORT_TIMESTAMP;
-	
-	public static final int TIMEOUT=8;
-	public static final int POLLING=2;
+	private static final String EXTENT_REPORT_PATH = ROOTPATH + "/ExtentReport/";
+
+	public static final String EXTENT_DOC_TITLE = "ExtentReportTestOutput" + REPORT_TIMESTAMP;
+
+	public static final int TIMEOUT = 6;
+	public static final int POLLING = 2;
 
 	public static String getExtentReportPath() {
 
 		if (ReadPropertyFile.getvalue(PropertiesEnums.OVERIDEREPORT).equalsIgnoreCase("yes")) {
-			return EXTENT_REPORT_PATH + ".html";
+			return EXTENT_REPORT_PATH + "TestExecutionReport.html";
 		} else {
-			return EXTENT_REPORT_PATH + "_"+REPORT_TIMESTAMP + ".html";
+			return EXTENT_REPORT_PATH + "TestExecutionReport_" + REPORT_TIMESTAMP + ".html";
 		}
 	}
 
@@ -52,8 +55,12 @@ public final class FrameworkConstant {
 		return EXPLICITWAITTIME;
 	}
 
-	public static String getPropertyFilePath() {
-		return PROPERTYFILEPATH;
+	public static String getConfigPropertyFilePath() {
+		return CONFIG_PROPERTYFILEPATH;
+	}
+
+	public static String getMessagePropertyFilePath() {
+		return MESSAGE_PROPERTYFILEPATH;
 	}
 
 	public static String getChromeDriverPath() {

@@ -9,8 +9,8 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.tmb.annotations.FrameworkAnnotations;
-import com.tmb.reports.ExtendReports;
-import com.tmb.reports.ExtentLogger;
+import com.tmb.extents.ExtendReports;
+import com.tmb.extents.ExtentLogger;
 
 public class ListnersClass implements ITestListener, ISuiteListener {
 
@@ -19,12 +19,12 @@ public class ListnersClass implements ITestListener, ISuiteListener {
 	}
 
 	public void onFinish(ISuite suite) {
-		try {
+		/*try {
 			ExtendReports.flushReport();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 	}
 
 	public void onTestStart(ITestResult result) {

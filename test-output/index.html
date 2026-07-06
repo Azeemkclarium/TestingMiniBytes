@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\AzeemK\eclipse-workspace\TestingMiniBytesFramework\testng.xml</span>
+                    <span>C:\Users\AzeemK\eclipse-workspace\Document_Automation\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tmb.tests.LoginTest_HRM" class="method navigator-link" hash-for-method="validloginTest({TestMethodName=validloginTest, ExecuteConfirmation=yes, Username=Admin, Priority=1, InvocationCount...)">validloginTest({TestMethodName=validloginTest, ExecuteConfirmation=yes, Username=Admin, Priority=1, InvocationCount...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.tmb.tests.DomainCreationTest" class="method navigator-link" hash-for-method="CreateDomain({TestMethodName=CreateDomain, ExecuteConfirmation=yes, Username=-, Priority=1, InvocationCount=1, TC...)">CreateDomain({TestMethodName=CreateDomain, ExecuteConfirmation=yes, Username=-, Priority=1, InvocationCount=1, TC...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.tmb.tests.LoginTest" class="method navigator-link" hash-for-method="ValidLoginTest({TestMethodName=ValidLoginTest, ExecuteConfirmation=yes, Username=admin, Priority=1, InvocationCount...)">ValidLoginTest({TestMethodName=ValidLoginTest, ExecuteConfirmation=yes, Username=admin, Priority=1, InvocationCount...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -121,17 +126,35 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.tmb.tests.LoginTest_HRM</span>
+              <span class="class-name">com.tmb.tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validloginTest({TestMethodName=validloginTest, ExecuteConfirmation=yes, Username=Admin, Priority=1, InvocationCount...)">
-                  </a> <!-- validloginTest({TestMethodName=validloginTest, ExecuteConfirmation=yes, Username=Admin, Priority=1, InvocationCount...) -->
-                  <span class="method-name">validloginTest</span>
-                  <span class="parameters">({TestMethodName=validloginTest, ExecuteConfirmation=yes, Username=Admin, Priority=1, InvocationCount=1, TC-ID=LOGIN_AUTO_TC_001, TestCaseName=To Validate the Login with Valid UserName & Password, Browser=chrome, Password=YWRtaW4xMjM=})</span>
+                  <a name="ValidLoginTest({TestMethodName=ValidLoginTest, ExecuteConfirmation=yes, Username=admin, Priority=1, InvocationCount...)">
+                  </a> <!-- ValidLoginTest({TestMethodName=ValidLoginTest, ExecuteConfirmation=yes, Username=admin, Priority=1, InvocationCount...) -->
+                  <span class="method-name">ValidLoginTest</span>
+                  <span class="parameters">({TestMethodName=ValidLoginTest, ExecuteConfirmation=yes, Username=admin, Priority=1, InvocationCount=1, TC-ID=TC_002, TestCaseName=Validate the User Login with Valid Username & Password, Domain Description=-, Browser=chrome, Password=QWRtaW5AMTIz, Domain Name=-})</span>
                   <em>
-(LOGIN_AUTO_TC_001_To Validate the Login with Valid UserName & Password)                  </em>
+(TC_002_Validate the User Login with Valid Username & Password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.tmb.tests.DomainCreationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateDomain({TestMethodName=CreateDomain, ExecuteConfirmation=yes, Username=-, Priority=1, InvocationCount=1, TC...)">
+                  </a> <!-- CreateDomain({TestMethodName=CreateDomain, ExecuteConfirmation=yes, Username=-, Priority=1, InvocationCount=1, TC...) -->
+                  <span class="method-name">CreateDomain</span>
+                  <span class="parameters">({TestMethodName=CreateDomain, ExecuteConfirmation=yes, Username=-, Priority=1, InvocationCount=1, TC-ID=TC_007, TestCaseName=Validate Domain Creation, Domain Description=Testing Domain Creation via Automation, Browser=chrome, Password=-, Domain Name=Unloading})</span>
+                  <em>
+(TC_007_Validate Domain Creation)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -139,7 +162,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\AzeemK\eclipse-workspace\TestingMiniBytesFramework\testng.xml</span>
+            <span class="header-content">C:\Users\AzeemK\eclipse-workspace\Document_Automation\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -153,7 +176,10 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;2&quot; name=&quot;Tests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.tmb.tests.LoginTest_HRM&quot;/&gt;
+      &lt;class name=&quot;com.tmb.tests.LoginPageElementVerification&quot;/&gt;
+      &lt;class name=&quot;com.tmb.tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.tmb.tests.DomainCreationTest&quot;/&gt;
+      &lt;class name=&quot;com.tmb.tests.DeleteDomain&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Tests --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -167,7 +193,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Tests (1 class)</span>
+                <span class="test-name">Tests (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -193,16 +219,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validloginTest')
-data.setCell(0, 2, 'com.tmb.tests.LoginTest_HRM')
-data.setCell(0, 3, 8268);
+data.setCell(0, 1, 'ValidLoginTest')
+data.setCell(0, 2, 'com.tmb.tests.LoginTest')
+data.setCell(0, 3, 5849);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CreateDomain')
+data.setCell(1, 2, 'com.tmb.tests.DomainCreationTest')
+data.setCell(1, 3, 3964);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -217,9 +247,23 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.tmb.tests.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">globalTearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.tmb.tests.DomainCreationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">globalTearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -228,19 +272,33 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.tmb.tests.LoginTest_HRM</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.tmb.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp([{TestMethodName=validloginTest, ExecuteConfirmation=yes, Username=Admin, Priority=1, InvocationCoun...)</span>
+                <span class="method-name">setUp([{TestMethodName=ValidLoginTest, ExecuteConfirmation=yes, Username=admin, Priority=1, InvocationCoun...)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validloginTest({TestMethodName=validloginTest, ExecuteConfirmation=yes, Username=Admin, Priority=1, InvocationCount...)</span>
-                <span class="method-start">3943 ms</span>
+                <span class="method-name">ValidLoginTest({TestMethodName=ValidLoginTest, ExecuteConfirmation=yes, Username=admin, Priority=1, InvocationCount...)</span>
+                <span class="method-start">2444 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">12214 ms</span>
-              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tmb.tests.DomainCreationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp([{TestMethodName=CreateDomain, ExecuteConfirmation=yes, Username=-, Priority=1, InvocationCount=1, T...)</span>
+                <span class="method-start">8300 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CreateDomain({TestMethodName=CreateDomain, ExecuteConfirmation=yes, Username=-, Priority=1, InvocationCount=1, TC...)</span>
+                <span class="method-start">8301 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tmb.tests.LoginPageElementVerification</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">globalTearDown</span>
+                <span class="method-start">12311 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

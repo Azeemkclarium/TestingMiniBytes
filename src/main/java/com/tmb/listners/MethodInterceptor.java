@@ -9,7 +9,9 @@ import org.testng.IMethodInstance;
 import org.testng.IMethodInterceptor;
 import org.testng.ITestContext;
 
+import com.tmb.enums.PropertiesEnums;
 import com.tmb.utilities.ExcelUtils;
+import com.tmb.utilities.ReadPropertyFile;
 
 public final class MethodInterceptor implements IMethodInterceptor {
 
@@ -19,22 +21,31 @@ public final class MethodInterceptor implements IMethodInterceptor {
 		List<IMethodInstance> result = new ArrayList<>();
 
 		List<Map<String, String>> list = null;
+
 		try {
+
 			list = ExcelUtils.getRunnerData("RunManager");
+
 		} catch (IOException e) {
+
 			e.printStackTrace();
+
 		}
 
 		for (int a = 0; a < methods.size(); a++) {
+
 			for (int b = 0; b < list.size(); b++) {
 
 				if (methods.get(a).getMethod().getMethodName().equals(list.get(b).get("TestMethodName"))) {
+
 					if (list.get(b).get("ExecuteConfirmation").equalsIgnoreCase("yes")) {
 
 						String DESC = list.get(b).get("TestCaseName");
+
 						String TCID = list.get(b).get("TC-ID");
 
 						methods.get(a).getMethod().setDescription(TCID + "_" + DESC);
+
 						result.add(methods.get(a));
 
 					}
@@ -46,6 +57,7 @@ public final class MethodInterceptor implements IMethodInterceptor {
 		}
 
 		return result;
+
 	}
 
 }
