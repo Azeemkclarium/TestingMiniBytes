@@ -1,1 +1,1 @@
-/target/
+-e ".settings/\n.classpath\n.project\ntarget/\nbin/" 
